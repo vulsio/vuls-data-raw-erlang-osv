@@ -1,11 +1,10 @@
 {
 	"schema_version": "1.6.0",
 	"id": "GHSA-5653-437f-5hmc",
-	"modified": "2023-12-23T22:57:44.493888Z",
+	"modified": "2024-05-19T02:23:57.590218Z",
 	"published": "2022-04-12T21:29:30Z",
 	"aliases": [
-		"CVE-2019-16764",
-		"GHSA-368c-xvrv-x986"
+		"CVE-2019-16764"
 	],
 	"summary": "Denial of service",
 	"details": "The use of `String.to_atom/1` in PowAssent is susceptible to denial of service attacks. In `PowAssent.Phoenix.AuthorizationController` a value is fetched from the user provided params, and `String.to_atom/1` is used to convert the binary value to an atom so it can be used to fetch the provider configuration value. This is unsafe as it is user provided data, and can be used to fill up the whole atom table of ~1M which will cause the app to crash.",
