@@ -1,9 +1,10 @@
 {
 	"schema_version": "1.6.0",
 	"id": "GHSA-pj33-75x5-32j4",
-	"modified": "2024-11-06T23:38:44Z",
+	"modified": "2024-11-08T07:57:08.146817Z",
 	"published": "2024-11-06T19:55:13Z",
 	"aliases": [
+		"BIT-rabbitmq-2024-51988",
 		"CVE-2024-51988"
 	],
 	"summary": "RabbitMQ HTTP API's queue deletion endpoint does not verify that the user has a required permission",
